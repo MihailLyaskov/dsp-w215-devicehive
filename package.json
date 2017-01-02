@@ -1,0 +1,23 @@
+{
+  "name": "dsp-w215-devicehive",
+  "version": "1.0.0",
+  "description": "DeviceHive gateway for D-link dsp-w215 smart switch",
+  "main": "device.js",
+  "scripts": {
+    "test": "nodejs device.js"
+  },
+  "keywords": [
+    "dsp-w215",
+    "smart",
+    "switch",
+    "devicehive"
+  ],
+  "author": "Mihail Lyaskov",
+  "license": "MIT",
+  "dependencies": {
+    "then-request": "^2.2.0",
+    "ws": "^1.1.1",
+    "xhr2": "^0.1.3",
+    "xmldom": "^0.1.27"
+  }
+}
