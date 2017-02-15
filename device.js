@@ -109,9 +109,9 @@ function read_data() {
         soapclient.consumption().done(function(power) {
             if (power != "ERROR") {
                 var lastRunPower = power;
-                var energy = power / (3600 / (timeInterval / 1000));
+                var energy = parseFloat(power) / (3600 / (timeInterval / 1000));
                 dh.sendNotification("dlink/init", {
-                    "power": power,
+                    "power": parseFloat(power),
                     "energy": energy,
                     "status": "OK"
                 }, function(err, res) {
