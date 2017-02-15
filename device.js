@@ -146,8 +146,10 @@ function read_data() {
         });
     }, timeInterval);
 
-    setTimeout(function(err, res) {
-        read_data();
-    }, 5000);
+
 
 };
+
+setTimeout(function(err, res) {
+    read_data();
+}, 5000);
